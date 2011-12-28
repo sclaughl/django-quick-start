@@ -23,6 +23,7 @@
            <div class='block' id='block-messages'>
              <div class='content'>
                <h2 class='title'>Now you're cooking with fire!</h2>
+               <h2 class='title'>Stuart was here with John!</h2>
                <div class='inner'>
                 <table style="border-spacing:20px">
                   <tr><td><i><%= @app['id'] %></i>, the <%= @title %> demo application, can be found <a href="../">here</a>.</td></tr>
@@ -38,10 +39,6 @@
              <div class='content'>
                <div class='inner'>
                   <table style="border-spacing:20px">
-                    <tr><td><b>Public IP Address:</b></td><td><%= node['cloud']['public_ipv4'] %></td></tr>
-                    <tr><td><b>Private IP Address:</b></td><td><%= node['cloud']['local_ipv4'] %></td></tr>
-                    <tr><td><b>FQDN:</b></td><td><%= node['fqdn'] %></td></tr>
-                    <tr><td><b>Public Hostname:</b></td><td><%= node['cloud']['public_hostname'] %></td></tr>
                     <tr><td><b>Platform:</b></td><td><%= node['platform'] %> (<%= node['platform_version'] %>)</td></tr>
                     <tr><td><b>Run List:</b></td><td><%= @run_list %></td></tr>
                     <tr><td><b>Last Chef Run Time:</b></td><td><%= Time.at(node['ohai_time']) %></td></tr>
