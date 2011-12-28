@@ -1,0 +1,4 @@
+knife ec2 server create -G chef-django-asd -I ami-61be7908 -f t1.micro \
+  -S knife -i ~/.ssh/knife.pem -x ubuntu \
+  -r 'role[base],role[django_cms_database_master],role[django_cms],recipe[django_cms::db_bootstrap]'
+
